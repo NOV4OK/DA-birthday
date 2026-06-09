@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="light" lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Сборник воспоминаний 2022-2026</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ccc5c0",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a4642",
+                        "surface-dim": "#dbdad7",
+                        "on-tertiary-fixed": "#1e1b18",
+                        "on-surface-variant": "#4d4540",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e9e8e5",
+                        "surface-container": "#efeeeb",
+                        "background": "#faf9f6",
+                        "surface-container-low": "#f4f3f1",
+                        "on-tertiary-container": "#96908b",
+                        "on-secondary-fixed-variant": "#514438",
+                        "on-primary-fixed-variant": "#4b4642",
+                        "primary-container": "#2d2926",
+                        "tertiary-container": "#2d2925",
+                        "surface-tint": "#635d5a",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-surface": "#1a1c1a",
+                        "tertiary": "#181512",
+                        "outline-variant": "#cfc4bd",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#231a0f",
+                        "secondary-fixed": "#f3dfce",
+                        "on-secondary": "#ffffff",
+                        "outline": "#7e756f",
+                        "inverse-surface": "#2f312f",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#1e1b18",
+                        "secondary-container": "#f3dfce",
+                        "primary-fixed": "#e9e1dc",
+                        "secondary": "#6a5c4f",
+                        "inverse-primary": "#cdc5c0",
+                        "surface-variant": "#e3e2e0",
+                        "surface": "#faf9f6",
+                        "secondary-fixed-dim": "#d6c3b3",
+                        "primary-fixed-dim": "#cdc5c0",
+                        "surface-bright": "#faf9f6",
+                        "primary": "#181512",
+                        "on-primary-container": "#96908b",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#e9e1db",
+                        "on-background": "#1a1c1a",
+                        "on-secondary-container": "#706254"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max-width": "1440px",
+                        "gutter": "32px",
+                        "overlap-lg": "-64px",
+                        "unit": "8px",
+                        "overlap-sm": "-24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "24px"
+                    },
+                    "fontFamily": {
+                        "hanken-grotesk": ["Hanken Grotesk"],
+                        "playfair-display": ["Playfair Display"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "caption": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-xl": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "caption": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #faf9f6;
+            color: #1a1c1a;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .pass-partout {
+            padding: 4px; /* Тонкая рамка "в облипку" */
+            background-color: #ffffff;
+            border: 1px solid #cfc4bd;
+            box-shadow: 0 4px 20px -6px rgba(0,0,0,0.05);
+        }
+        .interaction-scale {
+            transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .interaction-scale:hover {
+            transform: scale(1.02);
+            z-index: 10;
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1), transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="antialiased font-body-lg text-body-lg selection:bg-tertiary-fixed selection:text-tertiary flex flex-col min-h-screen">
+
+    <nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30">
+        <div class="text-headline-md font-headline-md tracking-tighter text-primary">
+            D&A
+        </div>
+        <div class="hidden md:flex gap-gutter items-center">
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Cover</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="2022.html">2022</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="2023.html">2023</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="2024.html">2024</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="2025.html">2025</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="2026.html">2026</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-primary border-b border-primary pb-1 scale-102 transition-transform duration-500 ease-out" href="all.html">Gallery</a>
+        </div>
+        <div class="flex items-center text-primary">
+            <button id="menu-toggle" class="md:hidden p-2 hover:bg-tertiary-fixed/10 rounded-full transition-colors focus:outline-none">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed top-[77px] left-0 w-full bg-surface/95 backdrop-blur-xl border-b border-outline-variant/30 px-margin-mobile py-6 flex flex-col gap-4 z-40 md:hidden shadow-lg">
+        <a class="font-hanken-grotesk text-label-caps uppercase text-primary font-bold py-2 border-b border-outline-variant/10" href="index.html">Cover</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="2022.html">2022</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="2023.html">2023</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="2024.html">2024</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="2025.html">2025</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="2026.html">2026</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2" href="all.html">Gallery</a>
+    </div>
+
+    <main class="pt-[120px] pb-32 flex-grow">
+        <header class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop mb-24 relative reveal-on-scroll">
+            <div class="max-w-4xl pt-16">
+                <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8 text-balance">
+                    Сборник воспоминаний 2022-2026
+                </h1>
+                <div class="w-24 h-px bg-outline-variant"></div>
+            </div>
+        </header>
+
+        <section class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop mb-40 reveal-on-scroll">
+            <div class="columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
+                
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="0" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC45PmLWVNRS5QwCudf3i-dtc4QJOpRJfPXvnNywbjC2qphKRDdJYviqRwbl4ZTPMu-0-iP_07_JPSJiukh0na7zkBs4uspwvcsBIKw7-sNz9705pADI9KIqfVGZUiNEIXiteZulGQ2-WQrESEB2hxUVg5X8xg707xW-EafuNKZObCbziCReNNtHJSxpnvGHi5u_ucjgkBvTP4TPdqKTmg3-XEQKSL4oJQP-hsTIxRk5cQrUwW3dwLV9g3-Sw2hOXwSfdjcJBqLjjTn"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="1" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuIJJ3RehiU3UPg3AHW9L_Ci_o5UzKBNA1oT9q-ejeQCJ0SeeM4KzqJVYruLjgCn3fbLX7uhU_AO6hrRaZsNVMq9aVsjf7JEaRVKpVKhqhNBHmBklJkXArOp6NXyvdAOtrCdHfBhNpEWOGSkTSqGPuw89CI2jA9P9iHBYEcRBJn3gJX8XWRhew_iKubzt5S8bgdrqBycCEUyG385au0tTcAmDqQEkzZD44tfOnLKEgho_uJvxwxbL8M_QpCN2BfC71uXhdxOgwpAHZ"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="2" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJiMs8GEUeBH2HhtTGHxvKaaQT7FvdNEI9VLmEJe2YerWxwi9BlBU9Ca8WK6qLY9KRuk7LHHfFn7qF5GrWLr7pXbG8DlyIyf1l5Xjr5emj0NYEV9QzULINs9m6YNbuUt15qvueYRdE6BXtxQrpo0okrY3xQna5hZr6tvsnoLoWeKmmV2oLt4m_XbWSLv4deMrmdyppG9-5bGuYjfW9Y6azKk-rHtpyKqTYzk8TnJAAon9Xl-dniMzRV2cVOE0lYBmYTXxvJOc1ZPq6"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="3" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ10k7xt9BJMgzKqHqwxzeFEe_RnGOhrH4KOGscdoxNZAXoLXbbVexcmB4KuSdRl4v-9tR1VQMOV867xH-MH_sJYyB00bustAwwqcqHiMVmok6nGOkIhWjstwTFFf8U-NZL9zWKZTxoashwmKWiv8HWzjle0DErFS4ShH3wxtanW5yhASaJynIYgBgYRUxpc0g83-_ORRAA1Bqwuu-abXtsbwt9QIlK7l3dPtWXA-zIC2EJHXKyViQb2993i8FIsp3ZS4tzD-QgTh1"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="4" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuVu3PZGCcJfYypGDAI4kGTZev_e2bB0VLF1Mn_P9u5ddNuHQDcC9ChlJmQ8kS6mIl5t8b025fQKZCxj3xg6khBBKSLbyElwHMijE2LHK7iv9GmtUiRMpmG86p-LAGWq2pGUXqnVfCZ0CJZ5ocjzmcz5-HIuoDBvvQ36f9KD0CzdqywUzZVisZ8_am2ZUqzpEs8OsS4xxd0HUKF-Nu8z-Z36sywCp6QVBNmzczS2U0958gf_x-Y1vWZE8dGPlfhXKBYzR31wn9Y-UR"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="5" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaq0M0OJTLN0fdax2ePHrzE8vpiVrMhMLeiZhGy1OMEaB3JaVah1qivR3ch3-AktjMx2KN_YLRvC8poJjG6GVR16zj9eUdXKdFU1bJ2qPLnuH4QzC9TmszVlNZxP0QXCnKSDkwVWBv8_IUuHG1YE9g5Qo23FKUeYFr8C55d6xLklJMa8Ic42fCwjD9P-bhzQgiSol4wc-1MkIuo0Zq08cnIueE5JySpcnwgZiO59GMfWvxWyztu6lsDMudqCS6sw9HHZ5evUiQ9slY"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="6" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqg2LhEJ1xfS8c01XCRv6glAtXhuqVy9ZvTdExp9ISyLYBE_4W2JhjIgakn9wWXN8687_YqIYCDnmisMpyfFazgRT_8UITAXSsFgz2Tz4rLxnO9d4syGnVYf75M09cg-33rwUwCoMCXSpkOo8WdpDFl6pQmqwlKL1pAakPaWgm-5UUUy8wq_jCZElA-m12C6eGx89pOtbBPSuv3-Jmn10szk4gnEws7WhXUqGvIp_lxynZ1onRbuIQGj68x8_1sSvCUFV8FTyQW47I"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="7" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEwf4tMX16wrQHh00VfWaL1KOfCHpmx0qIzof8vg1CNkN1QTIS0WBVB1tNleF33xgM1ZbJyN9Ws5ohazU9VVRAOSTuWuLYYs3Zf13DlRJoXydgjO2DgDcNhi8HifqW-4U8AxBmd6S594p7hCDblNEJNOgmJ3_91fjI-U-f5iLU6Zdtl1EeTd-xFbHUvs5zsbs3ntGtKuAKN-Fc2ze95TPLmgnqMVN_lHr5pVMfCV4uMd1xxyRs5d-fJTNYX_84ODKQmH4i1X4Zc_BU"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="8" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqKY28Gnu2qBEI7znP2jA2Xu2ghDqivxHseLnM3yymmnYWWVTfdvMOh_u-ZgQ37lmlL5aGY2yi20uEaVGs8dpwsd45CVpLzlUyraDvAXP-jkzR4aj28qJnHVN7w7fbZiziPmXVZQsDGd4HkzvO9UsG8es_31DrBL18EbAZp4locXj_hjmZVIrpeGoJhlFxTt7mm5egYVcjO1TJFQsb0twb9qezvvOmj4MT5tXDmK4p9bECBElL2Vhn3nt083mtl-aFq5qMAGNf_-wU"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="9" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjnIlJ-teE67lEz_g9aqHUbbqydIB52a59t6fW-iUEirt10RgV8I7UWT6ksSFE2SYJY73882VKo07qP4N_dJuaQxkyt-pJN8iHn4qKYQlTs1GWiLpVRAwMHOMNmjz477nSU0rKHPzVHW7Tb31wvKhwTGCpfuqE241n_O6KW8882o2864SR8OLeO_j2aH7JCV8UiSjI8bbiQTtA42lV9gcJGz-FZtfe3LIbub5HoI8jw6AkTsx6IK4OszdJafDxsY-270cxCNOSM0m9"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="10" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZRjA6FlXa2XIIob1ajqrZOvGsA5kCEKqeqsIfGiHQ2bInWVTn7r0i5kaIHfr8YEpH0l3Xl_Ie6yISVDdIFqLSaPnAXCE7ciwoPiRlXgQ2lAcqnXRNQSr_s-n6U4LA2HUuyk9FbYx2Cnu_co5CzURwbQfxmlq633VFyYdaWnuq1FRSeUc9RkE6fPeS0c68RHiCfqM8vJD4fZT5Y81ryKTZ2ZiEYA28sCAKqEBR6L1cW0crgh1Zxy1p1e98ggrsqRvwhxK9gp9kJXlG"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="11" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN7eO-71kw6UhipfWg4vVGxVw_d--yK-Wyek8OL27kbb9qSqz5euaBGx4w5gwyVOyOX1_xIMRdLfU6TSow-fw2kzEpYeZQd7Mju1qOtFc07MUxsHG98Qtc5Vmvgm0iMYT7fAk3uCcPQdnPXENEw9wuTwXkldCJ-1tNZsIrSEafc8s9af5r9bLCnKVA7GQw6TXMlBdWXAqnX02iKro7EEvOjJWGlKDi6zQ_5f43asTNiudBZ1CG_SreHraPysIvONMhoPG52PoFJ4dR"/></div>
+
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="12" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP1AI6jBbUj4j33PwZ34CdzFribV45OcmxJfdF5ubBOfdiIvKTDqTRdEEmeDvPyaiDq9X4Vz_Gtb6IsGO1nUpe-51QLy779jmrscKIHh7XaK3Aq9L3KraYU1WilSsHLv1Lih225GzPjxb105QjtHqosNoTgKWxA0fHvEpf28ooTayymNeiiQmhdqiO_C_m1idjOPjqmZAYzEGzShAJIGdCkjp8uBfzlKo3syaCyl68cY8hg2wnur-TXmEQRcu2inC3dYo0r0Z7pjXZ"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="13" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZY_kEHWj11Ei79EDqdBDNO00Xv6ff9zTtYqRjQNXXLo54I2uPZoZaLUozEOAxZdBsSdZiUCGeKTdmbn0vezchGTebrsJqRDBNudx0-28JvF_JfLTjVJjPu2WHILDUph1CXAH9q-U611w3hH6rnq3tzzyOQaRaLbfnoDXug-MRoZE4JgqAtImNVnO6s8EV4ngxxHdo6tQ-FuCGUn1b60NMGbBuFErKf5c_mtmLJqQKg6T5tP1ePqLNM0DKybMZCDvFnlMBUVOPLS-v"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="14" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_OHApQFqrXac-m8-X1mwygmZF08AvWnvsbDxWcrD4s11zCjMIZe6l6Zy9ctiyfuFSChxNre4E7EVjjlnGQrVUGZxUYDZHoasM9oSNz69RpSS_7tDeGTG9r7XXJJlMi2CWjiEl28fPIuiMFaOVvOvhUT-UoFYJHAgJmhblUHzgyEwE_VRjXddY6t73bhKpB_uEfSxL-FZiWEK-VLGGohB9FQABZQXhmLcTLWumKNtk5Kjj1ghGLdPi5nr21sAQRwXJiC5Uu5mrOBx3"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="15" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBedMquSVwFF64I93DwYae6tW91dzFK09XZOfTOAhTJhqr7WcOopJpB8sN2-0yzsDz8fgCpCEiRRR_5DNWRNyBf_n_7jDZ4pvHhJ69em4_Ky3li2MyoZQ4bxAKa--DuEf54dIsRuB_DtS4x9_mA7D5a02nyMdrMShR6o6HbF-GAJWY0iTmfMzoyVGFSKNfdLxIboBde9ZNiNBXTl3EHEUvH4Qdx7qpDIQ8ZUAIEiVcWEXfU8cE6d_TxRumW1T3BEUM8OelJrv9uCVbQ"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="16" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY6IBtz5z1qfoJ9oi1UrrfJKndpFHjqHUbd8rAzb6QVDa2GeaxXr0mK5oe4zyI8sa-DPMst75kIiGPIH1He8S5BAMhuse4rJABBn1ERsxMcj7U8EQMIv4cDzR6qQwPkZDSidbdzJy-3u6g3hIJjRNHjFqG7FSEA87ee7ZB1lMofLFkipHnsaL8PUBHcyZexZBGj2XqbBBlPHzEK8-sEh__4LxlhQ2fOd82Ja-Nfgcn8uurYqu52kaFqa4T225z0JDsxpPDpHyFL0o-"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="17" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoSg8V83seXFu1FbP2B35ayNnm16aIz0nFq6V-hzWjgIxnQYgcKgigJBUyDivAYItX2D5KJQTDBNmk44I3RGVd8X11sTYcZlq9qZRxDX9kiRV2CO_p4EVHnHVOlPCIjBrI7oliGmqyF0IzyMpSoQF8SRu6fD8LYwkH12TGbOYZAW9Lz4fhT2LBiz-3G3puBqNlzmcN8hMjPafNHevPD_eF3OyXYi6STcmQNUgjNAaUE-B2ZkwRvIRC5OJTXEMAyiSN43-Ls3B3EfwJ"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="18" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAdQoXG9LY0Drvs9WR7lzku-k8pETPnsSpsGrzDvnsEHDVn_ZCioHNlwSsRs5hWcPk5MjwxCS-MgLmSfUM7iuapi6oClN8XsbGmepmYLzgFUDTP0ui_3JMC0jHMoqGD4fNvWSb5sG86gIHpKVww_yo9ED_3gKh4OMbdKgQMPCwNsmlUYy_5jiACEr72tajlvzO9tphQ83fC4SBymgDCdKeBkyxvoUQXse2iqA6FVOloURIDoidMrgIJhr6BkSjvEedVOYRoYTrRtLx"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="19" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS7rlZH9_0tDicqGGiVV0RQTpWi4utj96Zf7R8W0Wyu-Vc8RSfYpAkN5lBzO2gjsIwUQ7JxuHIGmdzMRCV_s0ju9uCM7bC3lkMIxNnPDmwyqVleDcjMN6MHhcuQ_6ADCIbjfOB7J0MluXI-DE_z-Dg0dzUy-IDfqqnpzWi_98t61plGnGTuM9qlkJvW8j5Tlw3RKnR-r5mXIZFS9OhJp4Y_WN56wYVCARAHwXGE1ovt46gKVI38VH7wtfVVxjDwzk-w2biQL98Hrss"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="20" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlAWEw36uNFdsYPSnC_8JeOf9kahL6ScTlOgtmQ7npVHDzi3Ob3eYHElznzhkgyMwgupgFBTNSSF3vhRzfOeaiy5PfiyRq-oPQtBI_0uEsDgUIOFXYLXD5inj1P6ekbgFNeeVGJrGCLEqZAEbZKTQJPbcjEvSAcQwf_UDaWUK-HRqxVFKwD2P-N9XqY1L0hTWK0RvYkqKjD1rWG7ZWgql-4n31uWTnPzEg5c6EfFbwjd1JK9pkGRLLwVooODtreb1BYPMhWITqB6Er"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="21" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_KJtk0sbJXGEAMXK6IHtrQhy1ZlK1M2HEoyduEoLDMsckR5ygCXAiMA-jjXU1Qlm1VsxG4tyfNsjg0fLuIvvndkVnXz0F9HX6WB_heZIImfhx294-edtAohtVU6ujHHk8v5VVjQDRey_9D50zQWX7onOyLPXr6mNZUHAa_p-96n_65NED5RkgnkjIw4QBgglEAMnZgjUpdwxt84D90M-m94-ujSjFl3caD6Ii3PRqSKs39LTnHn6PKQFYn9LpoAbHGQVCQ1TIwvOV"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="22" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYvQ3oh18jagYPqVTTzv9j6_H5wACw1PpDoo05IMot3wSI2HbyYS0X71_71EtIMuOqe9L0WKH0BooXu9HMWT2G92TIMOkXMUSrVyVH95F-2pWnZZ3eGlJzDLg2II2E0SuPgcfZXDUb8Bdr_LoeACACb6VPLTZaYr9TPtijhrmSgGd0PZw8Acn1tGMBhl4kgR_Ug-qYeILqE9d_hN_v8_v6jcxmCNOYcMWFvDOHs7qDquQauGPdMrjzSEsGLgTcRlvITW3K3m3W3tPF"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="23" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIewJWp45wcAq4mGzY6XxW_tDuPiO_1aYzdqXc389DawMt97RiEn0aRb7FmvPz-mFtAuy6P84HL2-VW9AqBxdA63NpIUYEZzYuh2AcP4OM-AEVKMH--Bir-Q1nINnI2ynPNTHIPPlAJLV3Tuc82x7u92SJ0DLfwQw0-p-GYUzDutJHu1Uo3apSczyO8ThVY7B-kcC_ClMwdVDa2G0LD0lmUMjQHkEdvE5qk1S4qhFrRi6aJQrFXjJ7p4KH73X1WrBar79cLgmykju_"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="24" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApamwgDy_WXcbHxH84m6_lxvrfO5nH1kTsWog3epDChmK9raVpHND1tg1985eqBYhLQoqCYIpHJO6rF1HEFvmQMjgy3Dg_1GcZG6wvffvkmewmTc50qwdt03xw5_Zb7E83yh2STBjT8136p2vbmbDg8FkdOmcrIynf480X4ft36mZgYG6cdTyH7erK44erC478mndP_V1NYGQBH0gzIpkL8wYfoMRFiJ8gHU19OoEyGB9sVfqAnLgPfIv2I_qE_YW8wFxRq-w5g7RX"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="25" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAn1byMyIhZZ48tYBvRaSRrIeIZklm9luD9jbNPQ73VsthgS0qoBAazLTAq_WaBvXW2AzZ7whVu-ld8OgXd8A15VaNxjj4sZ-wz1WjdqCU6FeRnlEw2CmjfxwVgW48qvSrIpli4b4IuaJ6GVbDMAC9G4k9f8scz9uxcDpx8rBXdFTi6KY0khw-rhnLIo_hgv7FdV7OTZEMUF5OWm2fg6ZDIaRdEnASzg41v-QaRP-_jrH5pb9JInIvSR8PlkvtatOgOUpHmwAfcEF6"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="26" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC851i4TCC9lEcVwJooNVg-z9g7ftuMfqIxot_8ZBT5uXCFSopbOaxyOZXSm6_pqWJfcWQgdXnKr2YpS1tB_3gSEValVkrkIV3Y0e5HYSlBskmQ1nDwEHIuWxJJH2ZJWV5Or1X7sBpzgsgufQbNBiVJoNzbve7ST5dM9tLgS0Tkky1BnDHiN3yqn3t31C6wpIbJ5q_Z4Y3LeDpJBwMsm45SO92cO0d653RZ54D9ZJnBdT2osXXhcq4bNTI7xtznJO2c0FfMXtyN21PU"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="27" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVEy7T3I13HEapS90O4YLoAWmJJGPsZHXvEWngd-njhHW_08Pohjo-KJpT-AyVLRMmYwSdm4GCVxMPbZ_exHWfF0A8Qe9jIGU2gy_ygLvgdB-nPCN3xGKISXf5iq6hinL_mVPp_rX5iwikyBthDGdEgyI7ImwKYS8ZJWDIFSJ5cKYXtcn1XfT9GcU8M9rkYlhkiC9Cfby9JWlO6IJZrpN_zYtFhuzKVYAkxxxCJi5_XDme9EokKokcfimMaDR_Yz-lwduEW-ssCp5h"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="28" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-yoS9CotgF9e5skvtZkUTso99uCX6kAFz6-ZBhpbsnMKJDxgWtS8m0nSH-hrs3fX5YgnkCjM8jsIKSfE9-IDqo04NzOv1yGS0z5q53V_kIDZgBsd4b-iguN5HTfrbsnNl27RwEc7BwMmgRgj-K6iCjS8uLVVBRqFp70tlIDMg8EDJSFllW16nXg4zaqc3fUNXVehyA7-0BHXuDWbQjGD9RBtDJkWfsR7cqYbbqReTOwIg48pjqpIuUTulsNrpaPR8hQ1TZ7ZNSDE5"/></div>
+
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="29" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw9is95XcC9MZDLLcaYGwMXqm3XDeIjuh4I-GiYpNHXqssuSnZwtbjc1g9bDDbFUjjzZZomMzSOjMTUfvqg7fZoPWGPlbUpBYgcxM_Kpmwdq-dn2HRrfYROIsbNLMU0ktxrHi5Co768nLvjhSKziTkeiEN1ut0ta7jWqCQyB-kSTgAW0NlbSKMzrxoIWyytN7btdOgdej6SWETny9Bm_aYXq3YhJKbcVf7RqMo-y4VZk8zwSFKOKziPKZOf9ICVLIFcN2Z7cMkITIs"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="30" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkF6L7IDFmeE0yVsNIG8uwXdWTkeBStPWnU8dbU_2YdmB_XN2K4vPs4dzg70gmKbUdUATXu0QYkDQaqhIjEMe7on_5mqjzuNOXN4sIJVDSrR6yl6rDyuO_cdTNo58zoU4al3iVW5_9SDKknRYOUxoVn-dRND8hs0kptwVuIYVmE2XWs-ijwLfXONd9RwmcvEnVCAzJaSXIHZjMV9Bi8b37b3a9YH3iCOTm8quMRSL5JWr9w6BI8sP7N3OO7Idocirdq6djgOhjLQTr"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="31" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAloe5gscaJAAQ1X5XvL89N-fnJqsrBsSFbWfCjR0R8ikYOTyDBwgYWL52W8xUVBbyR5dLPsJ3yO8DApvdWxYn2FjLLDOYyV6khLO8PX1YQDI2kWaATl3ZpZEvXTyS9plZkmlyqeqvozpy8Yg1ssSFKCN-5HqDjQFgfCpxs_Nq-IVbXCM3TLnX8-4vu4Uqx1wo4x_bJSszWdJL9CLywHuFbwlK7XdWI3xNjqpawinDQVzRgcr2RY5yiJZj6W3Rg0zVUCCeJ8yAugS9L"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="32" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfk7sbPcC2EzfWqGH5_kO4td2vD_VHQktLRrD554OOcl8RJB_ytA6xlqNM_Iv1nimfDqVVJm-ylXA6-gZF45OKBJFeHDyv-DmQPQIxdZMEoL6Z-bIXYgvniRyyIy0LvGg9poOyAnEsoPY5dln3DDr6BSQoymVa2q5xCLAyUm2lGC_Qb7c_wAzluqnUC-bA5PCsD6b-LDuE-SHSoEmXf28pbcM0g_3TCR4G4dqqk_WEqCDERN6bWNbTw_DtHzU6v70HB7H65TxxloIf"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="33" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDo8koMbp5uk3QtkTsZngMNkafqcoUXcEhRuLkkLdFsyyPPRFv0OSVf_uNOX6sBLwN9Hv8AxZCCVuJcbtRk3Hy3sY3KTqBWcpUEGxeknTnKNbGK_ttUcBw9_SJW91p8DvZmaZVjytOZgbBWiOhfQ4BiQRsZcsKYzpeJfAOpkrsYIE2UVB62WX_HUGTOx5cQ_7cYArtKBDs2-n_VptyfQEy-qoCtzM7l-MX0KYmrzjBJ7i02t08YiTq3ZXfDaDGQ6tk6M6tBZvz5TvC"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="34" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaAlPoSmkWF_5bjMQLIFArNQDn9RdJ8p_70rSpkdRvxpSNMSsuCXc5iPh5nK0tY9AH6dNxKvXKbfd-10q4qn2SKEzLaoH_AMdChCgwgRD2hqzlmnSlLDKzm__-P6HNe907D9HVbN7wHHxu5u55nx_RWVhhkEnApoz_VjQuEj9e6KikwTlXaB-gZHYYVTM9AgNW2psnSMhSruXXIn8YTnSW1Yr72K922X3BVDAglF7FTHWm7zu1K1K2fljaA2Ty2zk_FAxqeA4qOPE8"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="35" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC48d76ruS12fqD4xAh0REA1shQNPPUmvHdDoL2qPL88jRJITiomJ8RU8uU0C0bsI-v-45kk6yRCwn0GoQOAVu4hUCX5595T-_MkjdFjtclFGdL5VFiHphwAPLy6Ww1FzJMiz-146Cyr8yc6O31RviI6fnTMrYCRV-GdIsjRRCRDkIrA7b1WOBs86LRhSCxDc3lHU4CP7sJwxyANbCk5G2Ac1OuUxdpOE3z1jkwgGeBNfucJkSQClDjqHjRDBoFqYht6yCeNDvOS1gN"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="36" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzimxnnLEd9D_UhUbjNPdVHce_w-685sktYDrXGv2Y__-xxpngn3QCUkwzOGmCgOsVrbyI2EfbtpG4sKqbXnPQwH8oGFGXsLZkybEldjt3QOw6R4OmTyN3dHqbntCMdy9DbdXvJ_kc8U9GlgtWsZNT_2BhjGje8mfRkk3-Q6XmHesRZWtMWoqA5v1Y1DFHiK69juj_0Ns_ha7tWRqRn4GWPguhZL4VwLwlUq0VCprARvek3JEI9-pgPkik1NbaWj7pxf0Ku5CMwks8"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="37" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdAPODQDc3F6-6JnI22ZtKs9GeIxJlZCGEmwIUpVf86UarensGJAzmwP4kyKQ_OAT04tgSk94hIND0BY7i-MKPYqQVdCxRDEVe1GWGb-unDWaF3KjpL5mccHeV8yulb85OHOSIfQV84U9BYLfR66awYNfEBk1i7FlcYj5-4ZLz4qiDTNHW5Em84RzHDvvL7Oz3SwHgiXwJns4zF4Kk3TeaEkrwOVBorMv98KrsrZcb3ky6my41x7iX7yXtpvzjPng8Vjsn9tZigRbB"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="38" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfqZ4qPMqhJt5xQDYJarFYzVH7tDD84i0t0chaLsUnoYJMMWHpkNPnKjXJfNNS-9FqkmoHvT9MdBpXDDpzT5QtGJzkcCKspOWBgg-k_l3ROHdZ8Q4Vvo9wyCp-IXiKzbhNTTjF4XR9f-F5A1g3A7c1rTu8AMYEmutxNxH8waFUmy3htp8UMd4_3UIgb9Xbyys1ICLicweBLgWr-YXVvJAIjHI-Ff-KLO4iNJJxObwD0D0lkvRWRxElSnjf3h-R6PBeGMM-1-oW_O9i"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="39" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmwgCghNOfU2aDc0TCrNlAiHue4lS5tVe3IVubNV1ucVG27zhtgvFfZf_ztV5UkSS0SRkvSIc-zVcmz6-XfpcgFnWnpNUtZp2q5EGTap54y0dAjEZ8BagGlv88C1trnm6GiQFtxMH35KGtRDhIkxuyMYSuP2BE9MoZl7J5Up4aV7sR1hbiI-tNBLVk4dW0PUrsA48NsFQbjbDjcM3M_3A4FmIAWZA3SobR3wen9BSUVWOfkEZzAUBLkNw6GGbGZGmCAA2K0n8wP71f"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="40" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU_-agwFAqvGA6AK2Ng--uwJS1h1k9QPHLmO2onf9SV9q1LnCPUQy0Gk1ziJGSwkp_NsNJFxuPHfk3YUOQhdxKm3WXkDqxew7R7nvF7_DGmPvU7ClKWqMftxLndaZvt3-rP-7MIJANh8CuVChXZDf9I7dsvR7HR6URlrGC4uuVYSnuNErOyw2FOjagWMupifWrMsd8LfM3yGEXeSnmo5ylhDDPxHIb_JtDOlIux-461yd3P8igU3LGwIDXQAUCApEkvZF-TaO5Mb60"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="41" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0wl6Nwq7sK8Lrea_g5Q3ihKvat42vynWPxR_6iKBLwG4NSmIyhNKBMItXZh1rrEFGs-SckhMPI9I3QqhTrLpFov1r5W3LKwYv6QQozjZohCYnYBQWw__gOA8LnS_O2Li6OSnteaXOeVjVu52smG9pzDct76lOqaHHcdVR28riIf7clO8V3iTSLWzO6TUdMJ4iQVUIr5712aSly2win-oDuaUUmzLH8TYjNtAfuc5uhRmg9_qu99EvMwV9GUS3-YnAOpulsmfWuHcq"/></div>
+
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="42" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlW66iu6Kw_aWeSRqvrfm-MLSKxv_XEL2O8X4ftZRue4T8gdpyH9R6bbs_zzTcMooZwcVmqzmj7pVmkETT4Np6LcA00l63AD54APN6XYHe2hOsnIAjLDdhznHixGaGTTD3wisvGCwd5DoBlUz9hOTNAL_jQAMgbeZ-wTNBof599b2DB8-BFLlsUOVsPkJhE5jqtMSAzUE92av7gafDqt42jCR1xn_GLsXDULy8Hm_L3dy3tmvtwP0DFnyMnBbpGZ8dTHdv2r_ephqO"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="43" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIE-q0JPrYU2P0On5YtXbAYhnLfTtOY-QseI43hdRE2ih0CC_Y2PK2cVGdRwM-R8jaJGkPeLgQMh-2hcS-rglk_K1NSIC3kbEWCgLvwPWS3-7GLD-cP0tMafRvZTwBZoDem0RVqJGRA_TV_QDGXbigfJYrlRKCHc2b0yZ2f5Tm3r0ptOvkgi6eyOVm04Pxa8afINvYAe8hzJqDAly6OZPUF-3soD8OSWg6LBJINIQWykwI7YFQ1pf9uGL275HCz2CURJyvFa1HAQTT"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="44" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhuAn22iDyn1nMPmVH0zHwUY94cN45snIoMHk7b4tJuuqiGiGIKQQF0qzW3KHs9CGGb5oXTWBoTI_J6ZHPiIK6t5nYRRAzj4H_hap3iV9CxSqD-6knU2Tuk6tB2ogiCWizdZJupXsqEv2uZ-SYxsEjdEa6ErsqA8Gbm06bAyN8hYVJoyY5yKEVsUdO2Uw4LxOXGNQev5h8nHGdu6XNh281zdqT3vWaTvQn76OIad9zTAwCyw-mfGs3MK_mT7E4LBr5TdEqNKhf_hbi"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="45" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgbXztP2TQs0SSchOva0Mn3tyuxe94l4G31vt0xeYw3SNxurK51LsYBrCEQ9pUPSmlosRKNaEdJ5lLqDUnv2_cmaGXM-e39LGQqXDWl8GssL3WDq8Rv27VUD7vGIbMuqQtgRKvAbnoIJK8e-i33iNQhqOaabI9lUJzMcJs5C8EjqTxf4HNJEOqTu-Ske0P9E1rO2uGp_jfoNL4prKSQZw2S4MRN5nBSJIZaiUBwKEj2zbi0GSJn-q30H66o7V0GmSBv4MaskwkIHMD"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="46" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD5zdscck81-g4rrmGL_3Ae3U8A4tTUgJ1AkpM_M0OwzzUgdSM0ZaNfeVKePLz1AKpGTtK87qXcORm9Np2e788gVD5LVUUDdLfyP4-sebZt-6K0LBeQJwG1G0pi7VyHW1sxqWkQK4cp62GmXgzYtlsRzppCocXRltprd3Cf0h8iVZkRulExdR7LzwVLbuE_V4Fm5TI7agYgG0aaqYOa2ZkZE25azBw6606oH4QhINAEnYhj_1r1UtXFuXs3FTvqTsMM1noGakt5XOH"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="47" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAb7Nh_7NSfk2VG4rPwEofGu70xYuM-RZsTpE1ohGSmj25H7Gix1eGkgISryXiPmf14GoLveSxrsYEuESSarahfr7SpX73YO7QUeWu377Ig8RKdvPC21NBD42TdYcS7V4OwVmZy7czW6RUcfY0zPnu68sOuMuwwDgcAOS2WAUVR6TabVq16JoBDE-wnhJjyoBg5ie8mNBzj0YOtTt5pQoOWzClRq8KMEEA907zH7uPn_SiEPYtpKfCGc_4S3_8pl3mZDTKe0FGBRKTP"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="48" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAldYmFYwF0iRBCv1Si4JylL_LmzJY_DTq8_qShl8Y-hAk5VctJvd13G-L-2bDUwhlgvzvqPwD7fRQNLcRJYCsq80yeO71gAU1VX_y1AGdagpWoKbCPAd_zhEVDmYygZnO-iqrlecJb1VeK1HsYLQGcaC3CQs3DmU9gI23QaqW8m6lDV88bJGyCbOieNSn21kY_3PeWuxo5Q4RGjp0QtBccTrpiLCbeGJCMDhhBFActdVPPXNXV15HWFAK5Xppzne8kl-D0pDqK9ahv"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="49" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxBUmKKu4b69tRiFwnOmL0e1w4HCr2r5-u_a1wgwjuuEKZm3JTmCMZpVfNF3N9x-qxsCzswqHX0GVCzNihFqUFKc5MSMytdTNPyLVvVo7PRp4Y19O9BICqINftGdd0gb3nT10tiF7C-RjXB7hmsdX_-a5uBMPY9tvU5RazGb-7bwsQUsmeKrbBI4GcfB8TRpSRxkVShIURxLIXmgCXgFD4Q6RaXOuvMsKaD1mSVUnnTlPeioC29o6fJTM-llT0eTXsM9vvmvkvqg_i"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="50" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlDHrcCLhKKJ1ENkU_mni5V3MOThNIMY2mR03HrWIySW8S_QSiaUpH_KjpcMmlva-iVjM1tFhdLC_0kOsKIjh5x_PUtvuY9EyJvCh9D9a1owNMn5mcvAkT2H4FOGZ14EAMcbxJXmX7bamaMfWRIu7PP3CgfWRmqKPr9OWeG-89PLCYt9zG_IhJap9Pk4F45nheNoPHLmtN6cfOLSmycnD1mQjT2YgCwCOGtCyGOYDI3GtO3mp94Mh34XSFGgEH4zrZ2mkUgIirjisR"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="51" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhIf_b7zPmPQDcCLfsAZjyUg4a0iHvbtBbYSX1-llg80_sJ0WWhQX5YiVicYuPrNuX3fX5DNm1AVqC6TauErRVRT3iPnctc1GwGWoq0-pTReaew-YXQWj6I6NXgaTU7Wl9QXABGifE9LmxRVGAIiU17MQJyAhOwXKObOadnYVq7cq2v1KSHIfmyAeGmabL_BHIRFYUw4Etv68ONoREJxsqh1iBwNvbQF8rFaZl5a5vU1Qnr9UXUTrGS9slL6Lu2rgpa78gats9vA5z"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="52" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzpAZEDKO0DudJ8I3fidAJYchXGP3lrh9ll2v8U2I74sm9H6XqDAPtDI61kYr85bbIj92m19mXm60NUs0AUDdnZ7-cab-elZ-2EsgtSDSgQqHyDy5-R5EufUvLVacUg9ARbluvaBZmr6nwcgfm9hN5LkLZHW37wg9tmLHl6kiJmVUMfHLmthnjf-vRAJti-JYylyTL8-zHtVzO7L2c_i7EsoSCCoR4T9yKXoY85pKy4LL5Dj54jSl8iu-ZD-vnu8g8OxorEpV-ITCb"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="53" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAa81V3XoO9NUOrdmOBCB2Tr3uDElMry7oUmxXix26fp0swVK2T0jBIaVmyQ56nMLrAicOlWELq5gKRjpSWYkjlpzpDkcq7cL1eWDVDbsAtSmBoTYnYd8ggDQUbMUmGNG8VXZZ_BozWlaTQfOFJqJgSp5Z6YvJtnpedQ4nYUKBJtjP6vj3zrSvhJFcUzxTG1142arTIF_90TqibX1QnNVNFoQjk1zXpiq-xydN9PH3TRMJErMTRVZ8FliO4Ku5FCxgQIaTLhEzfoqGR"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="54" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuYog2g1ymMRTV-D42soq1STzRy55ltZslkoopdqtcoES-8NjkUXk6K5e-y-3up6LwO9qkw_fsQmTKNQwsF1MPkscJbH4bFiNudyJVGMp3fLSMlxis8TIUcUfultH_tyPtEUayTCxRhKhQv302aOOIu6HHDnSw5SOd2AnUxMXOWUOgDzD1BN_QgeQyY7wQvmhNDg17oxP6QIh2nicuowyNgLG50Uvy5K8NkedAasuk7CxRLl6TdzxsGTK_GFCxSHgEc5h14iieDhRl"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="55" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOAOdCYdXZ-oiGis97jHvUdd363RiXa1RSROLGQWI_IomzlqZMtZFWW44ockT7GBhIlBYd0COvN_iRCepYDGM-z2r8xIaXWWGdv-8OtkXZMskp4OLtv63gBPAFVcSHCqZYmS373_dQW6QgLUWMoRd5DeLM9PS8k6635bLxK3Yycnsgzzvjw0XbxxYyPkHkYTDP-b2BoHXG8HAlR-8SJBAytHNqP6DUAodIM2iKwWhjd97wMvscQqXvn_5Hs322CWEbsfOb75fWy3XT"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="56" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcjcyCQ4u5hRlLkzRlqp3R8NRCaPZNc5EKGELi2oDu8LzePtpET_PhA2W55l1iL4DJPik8b25_I-v2tis4auIpIwhyLpsl1ucUQOKad2QQvczddn8aYWc77GbSW5tDEHqkm-lv45CYigRS4MEuEloCaYVSQsl_Q0tVhR9ATIaQyMKka9F1TOI93LRRItxjMtGE63ztT-15jUyz9df5S1_5V-r0Lim6ZXtV61RKBMpicPjN-Cnm7CLjBzXRumxsilHyTwqEdLnMhoku"/></div>
+
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="57" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe8Uq8PpUs2w8-kBS-r1bH3ktQied8d0MsLecPtYK_8PcNC8Mc18OwPCCjN0MDXxt8XXPqR2DiKLM6DLREelVPXEtm1_xBJ1tEOQdhq1I82NLcsNofGx-QTUDBBBUYt6Ho9eCrojEmmYdcXEB0BxrCXPIUnE41th6VhjMthAQr74qKTgD6UrtJipk8gUWX3HTN-Cl6cnZ3O9GYI7MkBgEn76_-BBDufyiumhdJeUSAQ9LkcTU7tcn1ke8Sqlhm8rE91kodnUlo_iot"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="58" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA31BoSHQOJ5Mb_HzhB8uzYqLho8V2JELtrHFnm5_U1uYDCOfBuuOuA2M0uzklmvVeyTLMMmPm0gELKnpnbemtFi7Sk68v7VHioPxwgJBuei9Znmz9SBXos_STgQsvJJqmdf7ydwNS0-eBI7Y2WTEpkDlT6HJqpgOHCpcT6byG6SfDHQMYmqRUji-mqvN0Cva4gQv1_sOvo537mMXnfU8FbYuR8412_0MVFR7YFjgZ6jMccBKa5k6hWXdVgHs52o3Sj59OWX_6zOyQE"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="59" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWN1ybVAzgUOYkbB2qs76zTc-2ihQxGef8lCPTK7rhMHWDeCm9VgjHTkReDLF8c93h-lXjiMj2lhvKOAn4smPTIHbfpNwB0xvqANqeQd6qrgeJ5hoSoddlMkCAYCDM0cud39PkH6GcK1RU6FVzsAalWtk_bCSg4dbpYU8Be8qdZtepvKjQ91WYmf74VHdynTih9eQ8mu8jYsWDeTNbVX1VmPfOJO8h4TnTC2xuAM_CwKgLrMVBewjfT8BmnnLfrXoLC2sonLYV6olx"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="60" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDLaz8QhcRXJahYLHt3hPdCOkM7-Cfr7nVbmY42lecT7Of0wkefb3DqdQJ6rwwQBXMN8s2RlzPx2AeGGvLGYOa9ZmKJ4tLgiBjSyn9f-QstWdwMH2YM0Gz3NZfvjR4fPlNCjPuAjgBwtmMNzkB3-FIqQF-Y_lMjCVmI6ItgHYo71dymNvEkbCK3MAK5Ax0MCIDBbCBUtKm-5uxHSfzfYbT6HJLRByn-ydaNkTTQGMWkjyrk2ewuK597cvNjmjvCoZ_6UcFEl_7qzhS"/></div>
+                
+                <div class="pass-partout interaction-scale break-inside-avoid overflow-hidden">
+                    <div class="relative w-full aspect-[4/3]">
+                        <img alt="61" class="absolute top-1/2 left-1/2 w-[75%] h-[133.33%] -translate-x-1/2 -translate-y-1/2 -rotate-90 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiOU7mAHFdrzG12crNGEchyTiICDZ019QN-U4D37jbPrAELv3PAuD8vMfJSRf12MjSHN0kbv1rAS77Jgi_ss35N29Aa6rMuBFnOX14gq3ynJP3VFhEqmkVqTVSTYW35C7YYMWJWk3FtuS_e0pgRUAVdRhK3wODWUglqkBGrwD9yiItP3y-0ww1ur_MeSIjP4nhyby3QuLqQPFsIRZbQi6wdiMpPLB_38GWFCs_zGmSkz1-oqBLLTYscvRmi85zezazgsKkpMh5BZXg"/>
+                    </div>
+                </div>
+
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="62" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCISB-8fRdqmDsWpWKGtZlk4eojay8oF_AsQAeD7dUfV6tL3kb5jEvXpTtNRzTemqs9mDHtEKusXGs4grIo8Puu_XnzIREj1yAjRLXfsFc1LtXLcR53UIbQi33OIqhtY0S2mxC8YYmBpD2VVoxI-BoBBHg7niXGqm51JCql1LOotnuDDaKg0PkD-DEFntmfTy2y7iZQTbJ9RnJayZshEdoLvrERF87ZrZfo7dbJstTbrAwNKdbJIChzdcI69YbPHtNR1HAlfg_s6N0d"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="63" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEKvgRq8nom3XFHgZl-FU3RXbEHoAYTPUXL7n9tAVXhg5OCj6I3lDNOye8qt897f3q2MoVbpGC8uUu8Pxnt_JURZKyM0DHeGsiaBh73_wkafQs0RVazspPvAPJXR9obdGheUnMilUQyKoGVl3SGR6b0GduLZRae4F9iGLTWkkayCR-kY_cfTYr2Jnov952zX4PkrG8kwNNFFqUKfUUzNgKV--7IXtEHWM4JysqeYO41_-KY2gdc4wR2EI21jALBlNEjEOmuEHsRcXO"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="64" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9VrBUV6VroqwNieje60-Gu1gxKwJq8ENbtIb_LCL66AOLMf9VNuRN_5wOfMpcCYDWyiq-pprjQ4bFvFZGp1fWJyCmVVn6Rolta-KfsYKuWTLjqI615a1pY1NpuAqBHHR1LqneFlZcTxcRckoHSnqHJhVolx3TULcKLUUEVoJGKMWaSIwphHjEW0cD8rtjsPpYmrovWy7DrUjyacX3NMTf8iYjC2T-_vWpIi9w9q4Iu6jeuO1Yqh3yi120dsofopswScTveOKh7Yon"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="65" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcLFyNnAn3RWPMF0u-ioB8tAqGD3lH3w5CKUrNMwFyC1LSlNazFp4xFSXCL6roXkR9BoAvSoGwpXUFRUA89MqWE81y5CTajeTT2iYDSIIu2n9o74wGNu8f3KdJDaDSnZ94mtzqaNqIXlgnNkBMEUOE1Ph5SyVV08Yqb2U5JJNTIIBP8pOvhwkybQcLlnVfj0ofKmcmEjFwgpM0OORdWUnyQr_CbDOycp3uwVKv8GG-QF8NmGkJKtCBoESDHpZ_fpSdIm5t6ry0LK7K"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="66" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgMOCOXfEncNyylo3pk-cKx_f-2nPZyBOAKp98-Qe097OzkF9gZ443d_bh9QVdBv2EnYvR7XxDB0Q8EC3rzy9zd4rKISGgdvYNzIVIl1f_VR7nEpuF3OC_EqyHh9lHL2t0WAiQj6_Cj-NkMIkjrzL5N7dHWjZO3NCrnaJZW6v7B94TQfUwYe8NauiJGYo7Hc1o9DrblVy5qb8iYwYXmmHQRSJ4fqs5X6eIl_pnI2H3BMtYkYX8hC2ME20TvpUHEx3QgXkWnC2_IkUG"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="67" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOnB7oGGPilPZYzGPFYnD_1ViyfT-mpMA7oJsnFMpkIvoKR3QGrX9d1Ri2NUT3ODmoLO-abfglSv5N9xcgR4bS1Y2G5MsNSVyhcYg0j6GLFBb9wsxjq04vOTHOMKxokH2g8lzK6y3ebF6be6A4f89O1cLVYy3RSwqe9-KmRkGkl0WD1NWh-qTZ5izyLAbUxSY0fVjzvTPPCmV57qfrajzNJUvVuY47w9Nlut0Q--Mj0USZEljO-MRo876QfoeqEYedKzSJGMPMO3es"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="68" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtONwZ61fZ-Ae8gxoGVbgsaM7Reia3RmFE38h95z7HmMWRdJM5Jm5O25ZH1mV-s2ftjH65b6lP5apQcVEYYI0cBnWPzdTtE7893z6rsZH_1iHFw-HF1pC_eKMFYbM0uaqWp1w3vgQOAhqGVEKRUa18MuLTBWRKoiOmPmx6CM1tK36tjuINLUYsDySrbhKWy5UNhj3RP_bCE9tojAXe-YhnQhWoUumcMCLGG_9-m2NZfb3OGo4uqA7agz43R2DvvgQL04Uzdmch6RJC"/></div>
+                <div class="pass-partout interaction-scale break-inside-avoid"><img alt="69" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgGjZa3igV02vs9_aGql8jHRLu_k4oZrP7isRienqgrYTaude6_rcBE7xA5BZfEbQaQcEmSkSkFSlwhpbdDXvS0pzYv7rhyyDJABfWs-w6rjoMh1U_MrAObh26zDiWUav6CyOD1qxpy1sr1UuFBqB1yYBUgW-Ai-S588MCswhsVBFH34UMhQ-shgduqYCKI4N_-5Dtsz-Tkwzxvd9VVe-pdNNrcps5KlP27XhwEWig_h1kHkXwmYJilqBYRO9FN_TCEiiyJPjUp5uB"/></div>
+
+                <div class="pass-partout interaction-scale break-inside-avoid overflow-hidden">
+                    <div class="relative w-full aspect-[4/3]">
+                        <img alt="70" class="absolute top-1/2 left-1/2 w-[75%] h-[133.33%] -translate-x-1/2 -translate-y-1/2 -rotate-90 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIhmhqK7EOQJVgQmINyL-ztgq0QID1Z7PYU1lE9K1MLJdLMwNZB0LO8aTWc5co3jGrFlSlBh7hMqTak5G_F0lVecXr_KY_RwXtdiDIaNWRSVyw7YKwVDCaWyLY_XzQOodcbnqtUgPU5L6sqR3ezArqo_VHi7my9t5Gz0UfysNLPnKod4kSRob0L83w6QQJbSl4YgrZ9k3v39Y003S9GWCEyLfGJ_9C0LPSPgiHZMXzzserV1iAyeftDqzzqIrhLQ_F-r5DSxmX6FZq"/>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop text-center reveal-on-scroll">
+            <div class="max-w-3xl mx-auto border-t border-b border-outline-variant/30 py-16">
+                <h2 class="font-headline-xl-mobile md:font-headline-md text-headline-xl-mobile md:text-headline-md text-primary mb-6">Главный вывод</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant italic">
+                    Полный визуальный архив общих моментов, смелых экспериментов и личных историй, бережно сохраненных на протяжении четырех лет. Каждая фотография — отдельная глава, которая навсегда останется частью нашей большой хроники.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-gutter bg-surface border-t border-outline-variant/20 mt-auto">
+        <div class="font-playfair-display text-headline-md text-on-surface">
+            D&A
+        </div>
+        <div class="font-hanken-grotesk text-caption uppercase tracking-[0.2em] text-on-surface-variant/60 text-center md:text-right">
+            © 2026 D&A Happy Birthday! All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Мобильное меню
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuToggle && mobileMenu) {
+                menuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+
+            // Плавное появление при скролле (Intersection Observer)
+            const reveals = document.querySelectorAll('.reveal-on-scroll');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.05
+            });
+
+            reveals.forEach(reveal => observer.observe(reveal));
+            
+            // Проверка для элементов, которые уже видны при загрузке
+            setTimeout(() => {
+                reveals.forEach(reveal => {
+                    const rect = reveal.getBoundingClientRect();
+                    if (rect.top < window.innerHeight) {
+                        reveal.classList.add('is-visible');
+                    }
+                });
+            }, 100);
+        });
+    </script>
+</body>
+</html>

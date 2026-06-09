@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>2022: Год Виртуальных Миров</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ccc5c0",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#4a4642",
+                        "surface-dim": "#dbdad7",
+                        "on-tertiary-fixed": "#1e1b18",
+                        "on-surface-variant": "#4d4540",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e9e8e5",
+                        "surface-container": "#efeeeb",
+                        "background": "#faf9f6",
+                        "surface-container-low": "#f4f3f1",
+                        "on-tertiary-container": "#96908b",
+                        "on-secondary-fixed-variant": "#514438",
+                        "on-primary-fixed-variant": "#4b4642",
+                        "primary-container": "#2d2926",
+                        "tertiary-container": "#2d2925",
+                        "surface-tint": "#635d5a",
+                        "surface-container-highest": "#e3e2e0",
+                        "on-surface": "#1a1c1a",
+                        "tertiary": "#181512",
+                        "outline-variant": "#cfc4bd",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#231a0f",
+                        "secondary-fixed": "#f3dfce",
+                        "on-secondary": "#ffffff",
+                        "outline": "#7e756f",
+                        "inverse-surface": "#2f312f",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#1e1b18",
+                        "secondary-container": "#f3dfce",
+                        "primary-fixed": "#e9e1dc",
+                        "secondary": "#6a5c4f",
+                        "inverse-primary": "#cdc5c0",
+                        "surface-variant": "#e3e2e0",
+                        "surface": "#faf9f6",
+                        "secondary-fixed-dim": "#d6c3b3",
+                        "primary-fixed-dim": "#cdc5c0",
+                        "surface-bright": "#faf9f6",
+                        "primary": "#181512",
+                        "on-primary-container": "#96908b",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#e9e1db",
+                        "on-background": "#1a1c1a",
+                        "on-secondary-container": "#706254"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max-width": "1440px",
+                        "gutter": "32px",
+                        "overlap-lg": "-64px",
+                        "unit": "8px",
+                        "overlap-sm": "-24px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "24px"
+                    },
+                    "fontFamily": {
+                        "hanken-grotesk": ["Hanken Grotesk"],
+                        "playfair-display": ["Playfair Display"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "caption": ["Hanken Grotesk"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "headline-xl": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+                        "caption": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+                        "display-lg": ["84px", { "lineHeight": "90px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl-mobile": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #faf9f6;
+            color: #1a1c1a;
+            overflow-x: hidden;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .pass-partout {
+            padding: 16px;
+            background-color: #ffffff;
+            border: 1px solid #cfc4bd;
+            box-shadow: 0 4px 24px -8px rgba(0,0,0,0.05);
+        }
+        .interaction-scale {
+            transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+        .interaction-scale:hover {
+            transform: scale(1.02);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="antialiased font-body-lg text-body-lg selection:bg-tertiary-fixed selection:text-tertiary">
+
+    <nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 bg-surface/90 backdrop-blur-xl border-b border-outline-variant/30">
+        <div class="text-headline-md font-headline-md tracking-tighter text-primary">
+            D&A
+        </div>
+        <div class="hidden md:flex gap-gutter items-center">
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Cover</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-primary border-b border-primary pb-1 scale-102 transition-transform duration-500 ease-out" href="2022.html">2022</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="2023.html">2023</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="2024.html">2024</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="2025.html">2025</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="2026.html">2026</a>
+            <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant hover:text-primary transition-colors duration-300" href="all.html">Gallery</a>
+        </div>
+        <div class="flex items-center text-primary">
+            <button id="menu-toggle" class="md:hidden p-2 hover:bg-tertiary-fixed/10 rounded-full transition-colors focus:outline-none">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed top-[77px] left-0 w-full bg-surface/95 backdrop-blur-xl border-b border-outline-variant/30 px-margin-mobile py-6 flex flex-col gap-4 z-40 md:hidden shadow-lg transition-all duration-300 ease-in-out">
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="index.html">Cover</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-primary font-bold py-2 border-b border-outline-variant/10" href="2022.html">2022</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="2023.html">2023</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="2024.html">2024</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="2025.html">2025</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2 border-b border-outline-variant/10" href="2026.html">2026</a>
+        <a class="font-hanken-grotesk text-label-caps uppercase text-on-surface-variant py-2" href="all.html">Gallery</a>
+    </div>
+
+    <main class="pt-[120px] pb-32">
+        <header class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop mb-32 relative">
+            <div class="max-w-4xl pt-16">
+                <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8 text-balance">
+                    2022: Год Виртуальных Миров, Кутеевских Безумств и Грандиозных Планов!
+                </h1>
+                <div class="w-24 h-px bg-outline-variant"></div>
+            </div>
+        </header>
+
+        <section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop mb-40">
+            <div class="grid grid-cols-4 md:grid-cols-12 gap-gutter items-center">
+                <div class="col-span-4 md:col-span-5 md:col-start-2 z-10 mb-12 md:mb-0">
+                    <h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6">Уютные хроники дистанта</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        Онлайн-школа стала нашим убежищем. Мы погружались в миры Genshin Impact, обсуждали аниме-сериалы до глубокой ночи и находили комфорт в виртуальном общении, пока реальный мир был поставлен на паузу.
+                    </p>
+                </div>
+                <div class="col-span-4 md:col-span-6 flex flex-col gap-12">
+                    <div class="pass-partout interaction-scale">
+                        <img alt="Скриншот из Genshin Impact" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC45PmLWVNRS5QwCudf3i-dtc4QJOpRJfPXvnNywbjC2qphKRDdJYviqRwbl4ZTPMu-0-iP_07_JPSJiukh0na7zkBs4uspwvcsBIKw7-sNz9705pADI9KIqfVGZUiNEIXiteZulGQ2-WQrESEB2hxUVg5X8xg707xW-EafuNKZObCbziCReNNtHJSxpnvGHi5u_ucjgkBvTP4TPdqKTmg3-XEQKSL4oJQP-hsTIxRk5cQrUwW3dwLV9g3-Sw2hOXwSfdjcJBqLjjTn"/>
+                    </div>
+                    <div class="pass-partout interaction-scale md:w-4/5 self-end">
+                        <img alt="Совместное селфи на дистанте" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuIJJ3RehiU3UPg3AHW9L_Ci_o5UzKBNA1oT9q-ejeQCJ0SeeM4KzqJVYruLjgCn3fbLX7uhU_AO6hrRaZsNVMq9aVsjf7JEaRVKpVKhqhNBHmBklJkXArOp6NXyvdAOtrCdHfBhNpEWOGSkTSqGPuw89CI2jA9P9iHBYEcRBJn3gJX8XWRhew_iKubzt5S8bgdrqBycCEUyG385au0tTcAmDqQEkzZD44tfOnLKEgho_uJvxwxbL8M_QpCN2BfC71uXhdxOgwpAHZ"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop mb-40 bg-surface-container-low py-24">
+            <div class="grid grid-cols-4 md:grid-cols-12 gap-gutter">
+                <div class="col-span-4 md:col-span-4 flex flex-col gap-12">
+                    <div class="pass-partout interaction-scale">
+                        <img alt="Атмосфера встреч" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJiMs8GEUeBH2HhtTGHxvKaaQT7FvdNEI9VLmEJe2YerWxwi9BlBU9Ca8WK6qLY9KRuk7LHHfFn7qF5GrWLr7pXbG8DlyIyf1l5Xjr5emj0NYEV9QzULINs9m6YNbuUt15qvueYRdE6BXtxQrpo0okrY3xQna5hZr6tvsnoLoWeKmmV2oLt4m_XbWSLv4deMrmdyppG9-5bGuYjfW9Y6azKk-rHtpyKqTYzk8TnJAAon9Xl-dniMzRV2cVOE0lYBmYTXxvJOc1ZPq6"/>
+                    </div>
+                    <div class="pass-partout interaction-scale">
+                        <img alt="Праздничный торт JoJo" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ10k7xt9BJMgzKqHqwxzeFEe_RnGOhrH4KOGscdoxNZAXoLXbbVexcmB4KuSdRl4v-9tR1VQMOV867xH-MH_sJYyB00bustAwwqcqHiMVmok6nGOkIhWjstwTFFf8U-NZL9zWKZTxoashwmKWiv8HWzjle0DErFS4ShH3wxtanW5yhASaJynIYgBgYRUxpc0g83-_ORRAA1Bqwuu-abXtsbwt9QIlK7l3dPtWXA-zIC2EJHXKyViQb2993i8FIsp3ZS4tzD-QgTh1"/>
+                    </div>
+                </div>
+                <div class="col-span-4 md:col-span-7 md:col-start-6">
+                    <h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6">Стильные 90-е и наши встречи</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-12">
+                        Тематический day в стиле 90-х, бесконечные встречи в Додо Пицце, долгожданный концерт Акмаля и тот самый легендарный торт JoJo. Эти моменты стали яркими вспышками в рутине.
+                    </p>
+                    <div class="pass-partout interaction-scale">
+                        <img alt="Групповое фото в стиле 90-х" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuVu3PZGCcJfYypGDAI4kGTZev_e2bB0VLF1Mn_P9u5ddNuHQDcC9ChlJmQ8kS6mIl5t8b025fQKZCxj3xg6khBBKSLbyElwHMijE2LHK7iv9GmtUiRMpmG86p-LAGWq2pGUXqnVfCZ0CJZ5ocjzmcz5-HIuoDBvvQ36f9KD0CzdqywUzZVisZ8_am2ZUqzpEs8OsS4xxd0HUKF-Nu8z-Z36sywCp6QVBNmzczS2U0958gf_x-Y1vWZE8dGPlfhXKBYzR31wn9Y-UR"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop mb-40">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6">Эпичное лето в Кутеевке<br/><span class="text-on-surface-variant text-headline-md">& Аристократичный пикник</span></h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant">
+                    Поездка на Бам, бег домой под дождем, разбитый телефон и, как контраст, наш эстетичный пикник. Лето крайностей и незабываемых впечатлений.
+                </p>
+            </div>
+            <div class="grid grid-cols-4 md:grid-cols-12 gap-gutter">
+                <div class="col-span-4 md:col-span-6 flex flex-col gap-12">
+                    <div class="pass-partout interaction-scale">
+                        <img alt="Летний отдых на природе" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaq0M0OJTLN0fdax2ePHrzE8vpiVrMhMLeiZhGy1OMEaB3JaVah1qivR3ch3-AktjMx2KN_YLRvC8poJjG6GVR16zj9eUdXKdFU1bJ2qPLnuH4QzC9TmszVlNZxP0QXCnKSDkwVWBv8_IUuHG1YE9g5Qo23FKUeYFr8C55d6xLklJMa8Ic42fCwjD9P-bhzQgiSol4wc-1MkIuo0Zq08cnIueE5JySpcnwgZiO59GMfWvxWyztu6lsDMudqCS6sw9HHZ5evUiQ9slY"/>
+                    </div>
+                    <div class="pass-partout interaction-scale">
+                        <img alt="Прогулка у воды" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqg2LhEJ1xfS8c01XCRv6glAtXhuqVy9ZvTdExp9ISyLYBE_4W2JhjIgakn9wWXN8687_YqIYCDnmisMpyfFazgRT_8UITAXSsFgz2Tz4rLxnO9d4syGnVYf75M09cg-33rwUwCoMCXSpkOo8WdpDFl6pQmqwlKL1pAakPaWgm-5UUUy8wq_jCZElA-m12C6eGx89pOtbBPSuv3-Jmn10szk4gnEws7WhXUqGvIp_lxynZ1onRbuIQGj68x8_1sSvCUFV8FTyQW47I"/>
+                    </div>
+                </div>
+                <div class="col-span-4 md:col-span-6 flex flex-col gap-12 md:pt-24">
+                    <div class="pass-partout interaction-scale">
+                        <img alt="Друзья на закате" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEwf4tMX16wrQHh00VfWaL1KOfCHpmx0qIzof8vg1CNkN1QTIS0WBVB1tNleF33xgM1ZbJyN9Ws5ohazU9VVRAOSTuWuLYYs3Zf13DlRJoXydgjO2DgDcNhi8HifqW-4U8AxBmd6S594p7hCDblNEJNOgmJ3_91fjI-U-f5iLU6Zdtl1EeTd-xFbHUvs5zsbs3ntGtKuAKN-Fc2ze95TPLmgnqMVN_lHr5pVMfCV4uMd1xxyRs5d-fJTNYX_84ODKQmH4i1X4Zc_BU"/>
+                    </div>
+                    <div class="pass-partout interaction-scale">
+                        <img alt="Эстетичный пикник" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqKY28Gnu2qBEI7znP2jA2Xu2ghDqivxHseLnM3yymmnYWWVTfdvMOh_u-ZgQ37lmlL5aGY2yi20uEaVGs8dpwsd45CVpLzlUyraDvAXP-jkzR4aj28qJnHVN7w7fbZiziPmXVZQsDGd4HkzvO9UsG8es_31DrBL18EbAZp4locXj_hjmZVIrpeGoJhlFxTt7mm5egYVcjO1TJFQsb0twb9qezvvOmj4MT5tXDmK4p9bECBElL2Vhn3nt083mtl-aFq5qMAGNf_-wU"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop mb-40">
+            <div class="grid grid-cols-4 md:grid-cols-12 gap-gutter items-center">
+                <div class="col-span-4 md:col-span-5 md:order-2">
+                    <h2 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-6">Восьмой класс и тайные шифры</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        Мечты о будущем, загадочное логово Бердымухамедова и Нурадил. Восьмой класс принес новые вызовы и новые тайны, которые мы разгадывали вместе.
+                    </p>
+                </div>
+                <div class="col-span-4 md:col-span-7 md:order-1 grid grid-cols-2 gap-8">
+                    <div class="col-span-2 pass-partout interaction-scale">
+                        <img alt="Общее фото класса в кабинете" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjnIlJ-teE67lEz_g9aqHUbbqydIB52a59t6fW-iUEirt10RgV8I7UWT6ksSFE2SYJY73882VKo07qP4N_dJuaQxkyt-pJN8iHn4qKYQlTs1GWiLpVRAwMHOMNmjz477nSU0rKHPzVHW7Tb31wvKhwTGCpfuqE241n_O6KW8882o2864SR8OLeO_j2aH7JCV8UiSjI8bbiQTtA42lV9gcJGz-FZtfe3LIbub5HoI8jw6AkTsx6IK4OszdJafDxsY-270cxCNOSM0m9"/>
+                    </div>
+                    <div class="col-span-1 pass-partout interaction-scale">
+                        <img alt="Школьные будни" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZRjA6FlXa2XIIob1ajqrZOvGsA5kCEKqeqsIfGiHQ2bInWVTn7r0i5kaIHfr8YEpH0l3Xl_Ie6yISVDdIFqLSaPnAXCE7ciwoPiRlXgQ2lAcqnXRNQSr_s-n6U4LA2HUuyk9FbYx2Cnu_co5CzURwbQfxmlq633VFyYdaWnuq1FRSeUc9RkE6fPeS0c68RHiCfqM8vJD4fZT5Y81ryKTZ2ZiEYA28sCAKqEBR6L1cW0crgh1Zxy1p1e98ggrsqRvwhxK9gp9kJXlG"/>
+                    </div>
+                    <div class="col-span-1 pass-partout interaction-scale">
+                        <img alt="Моменты перемены" class="w-full h-auto object-contain border border-outline-variant/30" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBN7eO-71kw6UhipfWg4vVGxVw_d--yK-Wyek8OL27kbb9qSqz5euaBGx4w5gwyVOyOX1_xIMRdLfU6TSow-fw2kzEpYeZQd7Mju1qOtFc07MUxsHG98Qtc5Vmvgm0iMYT7fAk3uCcPQdnPXENEw9wuTwXkldCJ-1tNZsIrSEafc8s9af5r9bLCnKVA7GQw6TXMlBdWXAqnX02iKro7EEvOjJWGlKDi6zQ_5f43asTNiudBZ1CG_SreHraPysIvONMhoPG52PoFJ4dR"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-container-max-width mx-auto px-margin-mobile md:px-margin-desktop text-center">
+            <div class="max-w-3xl mx-auto border-t border-b border-outline-variant/30 py-16">
+                <h2 class="font-headline-xl-mobile md:font-headline-md text-headline-xl-mobile md:text-headline-md text-primary mb-6">Главный вывод года</h2>
+                <p class="font-body-lg text-body-lg text-on-surface-variant italic">
+                    Несмотря на дистанты, сломанные телефоны и странные события, мы научились находить радость в мелочах, строить грандиозные планы и, главное, оставаться вместе, создавая свои собственные, уникальные миры.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="w-full px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-gutter bg-surface border-t border-outline-variant/20 mt-auto">
+        <div class="font-playfair-display text-headline-md text-on-surface">
+            D&A
+        </div>
+        <div class="font-hanken-grotesk text-caption uppercase tracking-[0.2em] text-on-surface-variant/60 text-center md:text-right">
+            © 2026 D&A Happy Birthday! All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Закрываем меню при клике на ссылку внутри него
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
